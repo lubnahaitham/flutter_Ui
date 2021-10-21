@@ -15,8 +15,9 @@ class DefaultCard extends StatelessWidget {
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 0, 5),
+              padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     'This is a card title',
@@ -24,9 +25,10 @@ class DefaultCard extends StatelessWidget {
                       fontSize: 17,
                     ),
                   ),
-                  Icon(Icons.check_circle,
-                      color: PRIMARY_COLOR,
-                      size: 20),
+              Icon(Icons.check_circle,
+                        color: PRIMARY_COLOR,
+                        size: 20),
+
                 ],
               ),
             ),

@@ -1,15 +1,10 @@
 import 'package:advance_app/constants.dart';
-import 'package:advance_app/widgets/cards/thread_card_elemnets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'default_card_elements.dart';
 
 class DefaultImageCard extends StatelessWidget {
   DefaultImageCard({Key? key}) : super(key: key);
-
-  final TextEditingController _title = TextEditingController();
-  final TextEditingController _image = TextEditingController();
 
 
   @override
@@ -23,15 +18,35 @@ class DefaultImageCard extends StatelessWidget {
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                ListCard(
-                  image: 'assets/hd_dp.jpg',
-                  columnData: {
-                    "name":  'Jose Portilla',
-                    "title2": "Jose Portilla Jose Portilla Jose",
-                "content":  'Jose Portilla',
-                "content2": 'lorem ipsum dolor sit amet',
-                  },
-                )
+                CircleAvatar(
+                  radius: 30.0,
+                  backgroundImage: AssetImage('assets/hd_dp.jpg'),
+                ),
+                SizedBox(height: 5,),
+
+                Text('Jose Portilla',
+                style: TextStyle(
+                  color: PRIMARY_COLOR,
+                  fontSize: 16,
+                ),),
+
+                SizedBox(height: 15,),
+
+                Text('Jose Portilla Jose Portilla',
+                  style: TextStyle(
+                  ),),
+
+                SizedBox(height: 15,),
+
+                Text('Jose Portilla',
+                  style: TextStyle(
+                  ),),
+
+                SizedBox(height: 15,),
+
+                Text('lorem ipsum dolor sit amet',
+                  style: TextStyle(
+                  ),),
 
 
               ]),

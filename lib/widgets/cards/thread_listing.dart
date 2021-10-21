@@ -23,7 +23,7 @@ class ThreadListing extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-
+            SizedBox(height: 15,),
             Column(children: [
               Text(
                 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
@@ -34,6 +34,7 @@ class ThreadListing extends StatelessWidget {
                 ),
               ),
             ]),
+                SizedBox(height: 15,),
 
             Text('#Lorem_ipsum#Lorem_ipsum',
                 style: TextStyle(
@@ -58,6 +59,7 @@ class ThreadListing extends StatelessWidget {
                   children: [
                     Text('Jan 15 ''18 at 13:56''', style: TextStyle(
                       color: Colors.grey,
+                      fontSize: 13.6,
                     ),
                     ),
                   ],

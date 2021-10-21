@@ -4,6 +4,11 @@ import 'package:advance_app/widgets/lists/list.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'buttons/list_buttons.dart';
+import 'buttons/outlined_button.dart';
+import 'buttons/outlined_list.dart';
+import 'buttons/rounded_buttons.dart';
+import 'buttons/text_button.dart';
 import 'inputs/checkbox/list_checkbox.dart';
 import 'inputs/default_text_area/text_area.dart';
 import 'inputs/dropdown/list_dropdown.dart';
@@ -94,6 +99,45 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('List Cards')),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ListDefaultButtons(),
+                    ));
+              },
+              child: Text('List Default Buttons')),
+
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DefaultRoundedButton(),
+                    ));
+              },
+              child: Text('List Rounded')),
+
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => OutlinedList(),
+                    ));
+              },
+              child: Text('List Outlined')),
+
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => TextButtons(),
+                    ));
+              },
+              child: Text('Text Buttons')),
         ],
       ),
     );

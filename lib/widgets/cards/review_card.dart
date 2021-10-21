@@ -2,6 +2,8 @@ import 'package:advance_app/widgets/cards/thread_card_elemnets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../constants.dart';
+
 class ReviewCard extends StatefulWidget {
   const ReviewCard({Key? key}) : super(key: key);
 
@@ -22,27 +24,72 @@ class _ReviewCardState extends State<ReviewCard> {
     return SizedBox(
       width: 300,
       child: Card(
-        elevation: 4.0,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          elevation: 4.0,
+          child: Column(
             children: [
+              ListTile(
+                contentPadding: EdgeInsets.all(5),
+                title: Padding(
+                  padding: EdgeInsets.fromLTRB(0, 15, 0, 10),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Column(
+                        children: [
+                          Text(
+                            'Jose Portilla',
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: PRIMARY_COLOR,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                  Text("Jan 15 '18 at 13:56",
+                    style: TextStyle(
+                        fontSize: 12.5,
+                        color: Colors.grey[700]),),
+                          Row(
+                            children: [
+                              Icon(Icons.star, size: 22,color: Colors.orangeAccent,),
+                              Icon(Icons.star, size: 22,color: Colors.orangeAccent,),
+                              Icon(Icons.star, size: 22,color: Colors.orangeAccent,),
+                              Icon(Icons.star, size: 22,color: Colors.orangeAccent,),
+                              Icon(Icons.star, size: 22,color: Colors.orangeAccent,),
+                            ],
+                          ),
+                        ],),
 
-          ListCardElement(
-            columnData: {
-              "name": "Jose Portilla",
-              "date": "Jan 15 '18 at 13:56",
-              "content": "Lorem ipsum, dolor sit amet consectetur "
-                  "adipisicing elit. Quibusdam sed similique quos illo nam sint aut "
-                  "laudantium enim iste quod ad "
-                  "obcaecati error quisquam sequi eos, culpa, "
-                  "neque officiis modi?",
-            },
-            iconData: Icons.check_circle,
-            image: 'assets/hd_dp.jpg',
-          ),
+                      Icon(Icons.check_circle,
+                          color: PRIMARY_COLOR, size: 20),
 
-        ]),
-      ),
+                    ],
+                  ),
+                ),
+
+
+                subtitle: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                        'Lorem ipsum dolor sit amet, consectetur\nadipisicing elit.Ab accusamus accusantium\ncommodi deserunt, '
+                            'distinctio eos exercitationem\nfugit hic, itaque nisi'
+                            'quisquam ullam vero!\n'
+                            'Cumque ducimus eum fuga nesciunt nulla porro?',
+                        style: TextStyle(
+                          fontSize: 14.0,
+                          color: Colors.black,
+                        )),
+                  ],
+                ),
+
+                leading: CircleAvatar(
+                  radius: 30,
+                  backgroundImage: AssetImage('assets/hd_dp.jpg'),
+                ),
+                trailing: Icon(Icons.more_horiz, color:Colors.black),
+              ),
+            ],
+          )),
     );
   }
 }
