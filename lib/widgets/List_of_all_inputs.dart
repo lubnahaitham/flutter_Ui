@@ -1,6 +1,7 @@
 import 'package:advance_app/widgets/cards/list_cards.dart';
 import 'package:advance_app/widgets/inputs/radio_buttons/list_radio.dart';
 import 'package:advance_app/widgets/lists/list.dart';
+import 'package:advance_app/widgets/page_layout/page_layout.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -138,6 +139,19 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('Text Buttons')),
+
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PageLayout(),
+                    ));
+              },
+              child: Text('Page Layout')),
+
+
+
         ],
       ),
     );

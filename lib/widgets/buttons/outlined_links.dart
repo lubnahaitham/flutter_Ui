@@ -54,7 +54,7 @@ class _OutlinedLinksState extends State<OutlinedLinks> {
           SizedBox(width: 12),
           OutlinedButton(
             child: Text(
-              'Default',
+              'Primary',
               style:
               TextStyle(color: PRIMARY_COLOR,
                   fontWeight: FontWeight.normal),
