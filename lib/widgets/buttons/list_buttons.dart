@@ -1,3 +1,4 @@
+import 'package:advance_app/widgets/buttons/switch.dart';
 import 'package:flutter/material.dart';
 
 import 'default_buttons.dart';
@@ -12,6 +13,7 @@ class ListDefaultButtons extends StatelessWidget {
       body: ListView(children: [
         DefaultButton(),
         DefaultLinks(),
+        SwitchButton(),
 
       ]),
     );

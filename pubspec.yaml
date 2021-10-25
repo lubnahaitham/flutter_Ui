@@ -64,6 +64,7 @@ flutter:
     - assets/
     - assets/Etqadem_Logo.svg
     - assets/Etqadem_Icon_Yellow.png
+    - assets/get_img.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

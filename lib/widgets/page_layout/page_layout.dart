@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'course_card.dart';
 import 'message_icon.dart';
 
 class PageLayout extends StatefulWidget {
@@ -17,34 +18,37 @@ class PageLayout extends StatefulWidget {
 class _PageLayoutState extends State<PageLayout> {
   Icon searchIcon = Icon(Icons.search);
   Widget searchText = Text('fff');
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: PRIMARY_COLOR,
-           title: IconButton(
-               onPressed: () => Navigator.of(context)
-                   .push(MaterialPageRoute(builder: (_) => SearchPage())),
-               icon: const Icon(Icons.search), color: Colors.grey,),
+          leading: IconButton(onPressed: () {},
+              icon: Icon(Icons.menu, size: 30)),
+          title: Row(
+            children: [
+              Image.asset(
+                "assets/Etqadem_Icon_Yellow.png",
+                width: 25.5,
+              ),
+              SizedBox(width: 8,),
+              IconButton(
+                onPressed: () => Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => SearchPage())),
+                icon: const Icon(Icons.search),
+                color: Colors.grey,
+              iconSize: 25.5,),
+            ],
+          ),
+          titleSpacing: 0,
 
-            leading: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Container(child:
-                IconButton(onPressed: (){}, icon: Icon(Icons.menu)),
-                ),
-              Image.asset("assets/Etqadem_Icon_Yellow.png",
-              width: 25,)
-
-              ],
-            ),
           actions: [
-            Message()
+            Message(),
           ],
-
-            ),
-        body: Container(),
+        ),
+        body: CourseCard(),
       ),
     );
   }

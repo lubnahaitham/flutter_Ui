@@ -33,6 +33,10 @@ class _SearchPageState extends State<SearchPage> {
                 contentPadding: EdgeInsets.all(5),
                 fillColor: Colors.white,
                 filled: true,
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white, width: 1.0),
+                  borderRadius: BorderRadius.circular(30.0),
+                ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.white, width: 1.0),
                   borderRadius: BorderRadius.circular(30.0),
