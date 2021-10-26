@@ -1,3 +1,4 @@
+import 'package:advance_app/widgets/cards/side_card_elements.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';
@@ -10,49 +11,16 @@ class SideCard extends StatelessWidget {
     return SafeArea(
       child: SizedBox(
         width: double.infinity,
-        child: Card(
-            elevation: 4.0,
-            child: Column(
-              children: [
-                // CircleAvatar(
-                //   radius: 25.0,
-                //   backgroundImage: AssetImage('assets/hd_dp.jpg'),
-                // ),
-                ListTile(
-                  contentPadding: EdgeInsets.all(5),
-                  title: Padding(
-                    padding: EdgeInsets.fromLTRB(0, 15, 0, 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(
-                          'This is a card title',
-                          style: TextStyle(
-                            fontSize: 17,
-                          ),
-                        ),
-                        Icon(Icons.check_circle,
-                            color: PRIMARY_COLOR, size: 20),
-                      ],
-                    ),
-                  ),
-                  subtitle: Text(
-                      'Lorem ipsum dolor sit amet, consectetur\nadipisicing elit.Ab accusamus accusantium\ncommodi deserunt, '
-                      'distinctio eos exercitationem\nfugit hic, itaque nisi'
-                      'quisquam ullam vero!\n'
-                      'Cumque ducimus eum fuga nesciunt nulla porro?',
-                      style: TextStyle(
-                        fontSize: 14.0,
-                        color: Colors.black,
-                      )),
-
-                  leading: CircleAvatar(
-                    radius: 30,
-                    backgroundImage: AssetImage('assets/hd_dp.jpg'),
-                  ),
-                ),
-              ],
-            )),
+        child: SideCardElements(
+          columnData: {"name": "this is a card title"},
+          columnSubtitle: {"name": "Lorem ipsum dolor sit amet, consectetur\nadipisicing elit."
+              "Ab accusamus accusantium\ncommodi deserunt,"
+              'distinctio eos exercitationem\nfugit hic, itaque nisi'
+              'quisquam ullam vero!\n'
+              'Cumque ducimus eum fuga nesciunt nulla porro?'},
+          iconData: Icons.check_circle,
+          image: 'assets/hd_dp.jpg',
+        )
       ),
     );
   }

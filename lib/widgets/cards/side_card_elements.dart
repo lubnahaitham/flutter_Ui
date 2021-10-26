@@ -1,14 +1,15 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';
 
-class ThreadCard extends StatelessWidget {
+class SideCardElements extends StatelessWidget {
   final Map<String, String> columnData;
   final Map<String, String> columnSubtitle;
   final String image;
   final IconData iconData;
 
-  const ThreadCard({
+  const SideCardElements({
     Key? key,
     required this.columnData,
     required this.columnSubtitle,
@@ -18,44 +19,39 @@ class ThreadCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: SizedBox(
-        width: double.infinity,
-        child: Card(
-          elevation: 4.0,
-          child: Column(children: [
+    return Card(
+        elevation: 4.0,
+        child: Column(
+          children: [
             ListTile(
               contentPadding: EdgeInsets.all(5),
-              title:  Padding(
+              title: Padding(
                 padding: EdgeInsets.fromLTRB(0, 15, 0, 10),
-                  child:
-                  Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Column(
-                  children: columnData.keys.map((key) {
-                    return Text(
-                      columnData[key]!,
-                      style: TextStyle(
-                          color: key == 'title' || key == 'title2'
-                              ? PRIMARY_COLOR
-                              : Colors.black,
-                          fontWeight: key == 'title' || key == 'title2'
-                              ? FontWeight.bold
-                              : FontWeight.normal,
-                          fontSize: key == 'subtitle1' || key == 'subtitle2'
-                              ? 19
-                              : 15),
-                    );
-                  }).toList(),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: columnData.keys.map((key) {
+                        return Text(
+                          columnData[key]!,
+                          style: TextStyle(
+                              color: key == 'subtitle1' || key == 'subtitle2'
+                                  ? PRIMARY_COLOR
+                                  : Colors.black,
+                              fontWeight:
+                                  key == 'subtitle1' || key == 'subtitle2'
+                                      ? FontWeight.bold
+                                      : FontWeight.normal,
+                              fontSize: key == 'subtitle1' || key == 'subtitle2'
+                                  ? 19
+                                  : 15),
+                        );
+                      }).toList(),
+                    ),
+                    Icon(iconData, color: PRIMARY_COLOR, size: 25),
+                  ],
                 ),
-
-                 Icon(Icons.check_circle, color: PRIMARY_COLOR, size:20),
-
-              ]),
               ),
-              // Icon(Icons.check_circle,
-              //       color: PRIMARY_COLOR,
-              //       size: 20),
-
               subtitle: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -67,7 +63,8 @@ class ThreadCard extends StatelessWidget {
                             color: key == 'subtitle1' || key == 'subtitle2'
                                 ? PRIMARY_COLOR
                                 : Colors.black,
-                            fontWeight: key == 'subtitle1' || key == 'subtitle2'
+                            fontWeight:
+                            key == 'subtitle1' || key == 'subtitle2'
                                 ? FontWeight.bold
                                 : FontWeight.normal,
                             fontSize: key == 'subtitle1' || key == 'subtitle2'
@@ -83,14 +80,8 @@ class ThreadCard extends StatelessWidget {
                 radius: 30,
                 backgroundImage: AssetImage(image),
               ),
-              trailing: Icon(
-                iconData,
-                color: Colors.black,
-              ),
             ),
-          ]),
-        ),
-      ),
-    );
+          ],
+        ));
   }
 }

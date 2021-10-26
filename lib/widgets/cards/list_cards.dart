@@ -15,10 +15,27 @@ class ListCards extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(children: [
       DefaultCard(),
+
       SideCard(),
-      ThreadCard(),
+
+      ThreadCard(image: 'assets/hd_dp.jpg',
+        iconData: Icons.more_horiz,
+        columnSubtitle: {"subtitle": "I made the switch from Samsung to\n"
+    "Apple in late 2019, I, also, made the \nswitch "
+    "from Windows to Mac earlier \nthis year."
+    "There are definitely many positives in the switch,"
+    " but there are\nsome things I wish I had known.\n"
+    "Photo by Tianyi Ma on Unsplash"},
+        columnData: {"title": "Jose Portilla"},
+        ),
+
       ReviewCard(),
-      ThreadListing(),
+
+      ThreadListing( columnSubtitle: {"subtitle1": "Lorem ipsum Lorem Ipsum",
+        "title": "Lorem Ipsum Lorem Ipsum"},
+        columnData1: {"subtitle1": "Jose Portilla"},
+        columnData: {},
+        iconData: Icons.check_circle,),
       DefaultImageCard(),
       ThreadCardQuestion(),
     ]);

@@ -1,4 +1,3 @@
-import 'package:advance_app/widgets/cards/thread_card_elemnets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
