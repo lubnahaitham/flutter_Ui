@@ -16,9 +16,9 @@ class ListCards extends StatelessWidget {
     return ListView(children: [
       DefaultCard(),
 
-      SideCard(),
+      const SideCard(),
 
-      ThreadCard(image: 'assets/hd_dp.jpg',
+      const ThreadCard(image: 'assets/hd_dp.jpg',
         iconData: Icons.more_horiz,
         columnSubtitle: {"subtitle": "I made the switch from Samsung to\n"
     "Apple in late 2019, I, also, made the \nswitch "
@@ -29,15 +29,15 @@ class ListCards extends StatelessWidget {
         columnData: {"title": "Jose Portilla"},
         ),
 
-      ReviewCard(),
+      const ReviewCard(),
 
-      ThreadListing( columnSubtitle: {"subtitle1": "Lorem ipsum Lorem Ipsum",
+      const ThreadListing( columnSubtitle: {"subtitle1": "Lorem ipsum Lorem Ipsum",
         "title": "Lorem Ipsum Lorem Ipsum"},
         columnData1: {"subtitle1": "Jose Portilla"},
         columnData: {},
         iconData: Icons.check_circle,),
       DefaultImageCard(),
-      ThreadCardQuestion(),
+      const ThreadCardQuestion(),
     ]);
   }
 }

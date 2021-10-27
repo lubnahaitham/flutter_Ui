@@ -1,3 +1,5 @@
+import 'package:advance_app/widgets/cards/rating.dart';
+import 'package:advance_app/widgets/cards/side_card_elements.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -11,18 +13,11 @@ class ReviewCard extends StatefulWidget {
 }
 
 class _ReviewCardState extends State<ReviewCard> {
-  var rating = 0.0;
-
-  final TextEditingController _title = TextEditingController();
-  final TextEditingController _subtitle = TextEditingController();
-  final TextEditingController _leading = TextEditingController();
-  final TextEditingController _trailing = TextEditingController();
+  double rating = 3.5;
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 300,
-      child: Card(
+    return Card(
           elevation: 4.0,
           child: Column(
             children: [
@@ -49,16 +44,16 @@ class _ReviewCardState extends State<ReviewCard> {
                         color: Colors.grey[700]),),
                           Row(
                             children: [
-                              Icon(Icons.star, size: 22,color: Colors.orangeAccent,),
-                              Icon(Icons.star, size: 22,color: Colors.orangeAccent,),
-                              Icon(Icons.star, size: 22,color: Colors.orangeAccent,),
-                              Icon(Icons.star, size: 22,color: Colors.orangeAccent,),
-                              Icon(Icons.star, size: 22,color: Colors.orangeAccent,),
+                            StarRating(
+                            rating: rating,
+                            onRatingChanged:
+                                (rating) => setState(() => this.rating = rating), color: Colors.amber,
+                          ),
                             ],
                           ),
                         ],),
 
-                      Icon(Icons.check_circle,
+                      const Icon(Icons.check_circle,
                           color: PRIMARY_COLOR, size: 20),
 
                     ],
@@ -88,7 +83,7 @@ class _ReviewCardState extends State<ReviewCard> {
                 trailing: Icon(Icons.more_horiz, color:Colors.black),
               ),
             ],
-          )),
+          ),
     );
   }
 }

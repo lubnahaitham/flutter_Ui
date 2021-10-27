@@ -28,7 +28,7 @@ class ThreadCardQuestionElements extends StatelessWidget {
                 radius: 30.0,
                 backgroundImage: AssetImage(image),
               ),
-              SizedBox(height: 5,),
+              const SizedBox(height: 5,),
 
               Column(
                 children: columnData.keys.map((key) {

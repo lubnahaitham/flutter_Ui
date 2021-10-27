@@ -22,7 +22,7 @@ class ThreadListing extends StatelessWidget {
     return Card(
       elevation: 4.0,
       child: Padding(
-        padding: EdgeInsets.all(5),
+        padding: const EdgeInsets.all(5),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

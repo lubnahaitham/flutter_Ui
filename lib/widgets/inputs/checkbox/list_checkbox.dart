@@ -14,7 +14,7 @@ class ListCheckBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Default CheckBox Field'),
+        title: const Text('default CheckBox Field'),
         centerTitle: true,
       ),
       body: Padding(padding: EdgeInsets.all(10), child: ListView(

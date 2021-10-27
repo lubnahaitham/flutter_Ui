@@ -6,13 +6,13 @@ import 'default_card_image_elements.dart';
 
 
 class DefaultImageCard extends StatelessWidget {
-  DefaultImageCard({Key? key}) : super(key: key);
+  const DefaultImageCard({Key? key}) : super(key: key);
 
 
   @override
   Widget build(BuildContext context) {
     return
-        DefaultCardImageElements(
+        const DefaultCardImageElements(
           image: 'assets/hd_dp.jpg',
           columnSubtitle: {"title3": 'Jose Portillla',
           "title4": "lorem ipsum"},

@@ -48,7 +48,7 @@ class ThreadCard extends StatelessWidget {
                   }).toList(),
                 ),
 
-                 Icon(Icons.check_circle, color: PRIMARY_COLOR, size:20),
+                 const Icon(Icons.check_circle, color: PRIMARY_COLOR, size:20),
 
               ]),
               ),
