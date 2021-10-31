@@ -1,7 +1,6 @@
-import 'package:advance_app/widgets/cards/side_card_elements.dart';
+import 'package:advance/new_ui/widgets/cards/side_card/side_card_elements.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
 
 class SideCard extends StatelessWidget {
   const SideCard({Key? key}) : super(key: key);

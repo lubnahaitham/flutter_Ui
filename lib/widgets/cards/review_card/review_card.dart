@@ -1,9 +1,9 @@
-import 'package:advance_app/widgets/cards/rating.dart';
-import 'package:advance_app/widgets/cards/side_card_elements.dart';
+
+import 'package:advance/new_ui/constants.dart';
+import 'package:advance/new_ui/widgets/cards/review_card/rating.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
 
 class ReviewCard extends StatefulWidget {
   const ReviewCard({Key? key}) : super(key: key);

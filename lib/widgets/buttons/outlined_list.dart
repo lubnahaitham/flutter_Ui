@@ -1,12 +1,12 @@
-import 'package:advance_app/widgets/buttons/outlined/accent_outlined.dart';
-import 'package:advance_app/widgets/buttons/outlined/danger_outlined.dart';
-import 'package:advance_app/widgets/buttons/outlined/default_with_icon.dart';
-import 'package:advance_app/widgets/buttons/outlined/disabled_outlined.dart';
-import 'package:advance_app/widgets/buttons/outlined/info_outlined.dart';
-import 'package:advance_app/widgets/buttons/outlined/primary_outlined.dart';
-import 'package:advance_app/widgets/buttons/outlined/secondary_outlined.dart';
-import 'package:advance_app/widgets/buttons/outlined/success_outlined.dart';
-import 'package:advance_app/widgets/buttons/outlined/warning_outlined.dart';
+import 'package:advance/new_ui/widgets/buttons/outlined/accent_outlined.dart';
+import 'package:advance/new_ui/widgets/buttons/outlined/danger_outlined.dart';
+import 'package:advance/new_ui/widgets/buttons/outlined/default_with_icon.dart';
+import 'package:advance/new_ui/widgets/buttons/outlined/disabled_outlined.dart';
+import 'package:advance/new_ui/widgets/buttons/outlined/info_outlined.dart';
+import 'package:advance/new_ui/widgets/buttons/outlined/primary_outlined.dart';
+import 'package:advance/new_ui/widgets/buttons/outlined/secondary_outlined.dart';
+import 'package:advance/new_ui/widgets/buttons/outlined/success_outlined.dart';
+import 'package:advance/new_ui/widgets/buttons/outlined/warning_outlined.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

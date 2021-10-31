@@ -1,9 +1,9 @@
-import 'package:advance_app/constants.dart';
-import 'package:advance_app/widgets/page_layout/search_page.dart';
+
+import 'package:advance/new_ui/constants.dart';
+import 'package:advance/new_ui/widgets/page_layout/search_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
 
 import 'course_card.dart';
 import 'message_icon.dart';

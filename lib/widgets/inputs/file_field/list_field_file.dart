@@ -1,8 +1,9 @@
-import 'package:advance_app/widgets/inputs/checkbox/list_checkbox.dart';
+
+import 'package:advance/new_ui/widgets/inputs/file_field/default_field_file.dart';
+import 'package:advance/new_ui/widgets/inputs/input_widget.dart';
 import 'package:flutter/material.dart';
 
-import 'package:advance_app/widgets/inputs/input_widget.dart';
-import 'package:advance_app/widgets/inputs/file_field/default_field_file.dart';
+
 
 import 'error_field_file.dart';
 

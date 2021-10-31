@@ -1,7 +1,7 @@
-import 'package:advance_app/widgets/List_of_all_inputs.dart';
-import 'package:advance_app/widgets/inputs/input_fields/list_inputs.dart';
+
+
+import 'package:advance/new_ui/widgets/lists/list_tile.dart';
 import 'package:flutter/material.dart';
-import 'package:advance_app/widgets/lists/list_tile.dart';
 
 class ListsView extends StatefulWidget {
   const ListsView({Key? key}) : super(key: key);

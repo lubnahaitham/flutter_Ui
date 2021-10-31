@@ -1,5 +1,4 @@
-import 'package:advance_app/constants.dart';
-import 'package:advance_app/widgets/cards/default_card_elments.dart';
+import 'package:advance/new_ui/widgets/cards/default_card/default_card_elments.dart';
 import 'package:flutter/material.dart';
 
 class DefaultCard extends StatelessWidget {

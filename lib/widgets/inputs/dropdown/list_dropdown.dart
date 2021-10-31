@@ -1,6 +1,5 @@
 
-import 'package:advance_app/widgets/inputs/default_text_area/text_area.dart';
-import 'package:advance_app/widgets/inputs/dropdown/underline.dart';
+import 'package:advance/new_ui/widgets/inputs/dropdown/underline.dart';
 import 'package:flutter/material.dart';
 
 import '../input_widget.dart';

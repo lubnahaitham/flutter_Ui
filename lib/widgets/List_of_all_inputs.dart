@@ -1,13 +1,14 @@
-import 'package:advance_app/widgets/cards/list_cards.dart';
-import 'package:advance_app/widgets/inputs/radio_buttons/list_radio.dart';
-import 'package:advance_app/widgets/lists/list.dart';
-import 'package:advance_app/widgets/page_layout/page_layout.dart';
-import 'package:advance_app/widgets/player_page/player_page.dart';
+import 'package:advance/new_ui/widgets/cards/list_cards.dart';
+import 'package:advance/new_ui/widgets/inputs/radio_buttons/list_radio.dart';
+import 'package:advance/new_ui/widgets/lists/list.dart';
+import 'package:advance/new_ui/widgets/page_layout/page_layout.dart';
+import 'package:advance/new_ui/widgets/player_page/player_page.dart';
+import 'package:advance/new_ui/widgets/player_page/video_player.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'buttons/list_buttons.dart';
-import 'buttons/outlined/default_outlined.dart';
 import 'buttons/outlined_list.dart';
 import 'buttons/rounded_list.dart';
 import 'buttons/text_button.dart';
@@ -31,7 +32,6 @@ class ListAllInputs extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => ListInputs()));
               },
               child: Text('Input Fields')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -41,7 +41,6 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('RadioFields')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -51,7 +50,6 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('File Field')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -61,7 +59,6 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('DropDown Field')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -71,7 +68,6 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('TextArea Field')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -81,7 +77,6 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('CheckBoxField')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -91,7 +86,6 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('List')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -110,7 +104,6 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('List default Buttons')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -120,7 +113,6 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('List Rounded')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -130,7 +122,6 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('List Outlined')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -140,7 +131,6 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('Text Buttons')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -150,21 +140,15 @@ class ListAllInputs extends StatelessWidget {
                     ));
               },
               child: Text('Page Layout')),
-
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Player(),
+                      builder: (context) => VideoPlayerScreen(),
                     ));
               },
               child: Text('Player Page')),
-
-
-
-
-
         ],
       ),
     );

@@ -1,6 +1,5 @@
 
-import 'package:advance_app/widgets/inputs/dropdown/list_dropdown.dart';
-import 'package:advance_app/widgets/inputs/radio_buttons/radio_input.dart';
+import 'package:advance/new_ui/widgets/inputs/radio_buttons/radio_input.dart';
 import 'package:flutter/material.dart';
 
 import '../input_widget.dart';

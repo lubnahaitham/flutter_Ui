@@ -1,12 +1,11 @@
-import 'package:advance_app/widgets/inputs/file_field/list_field_file.dart';
-import 'package:advance_app/widgets/inputs/input_widget.dart';
-import 'package:advance_app/widgets/inputs/input_fields/small_input.dart';
-import 'package:advance_app/widgets/inputs/input_fields/underline_input.dart';
+import 'package:advance/new_ui/widgets/inputs/input_fields/default_input.dart';
+import 'package:advance/new_ui/widgets/inputs/input_fields/error_input.dart';
+import 'package:advance/new_ui/widgets/inputs/input_fields/large_input.dart';
+import 'package:advance/new_ui/widgets/inputs/input_fields/small_input.dart';
+import 'package:advance/new_ui/widgets/inputs/input_fields/underline_input.dart';
+import 'package:advance/new_ui/widgets/inputs/input_widget.dart';
 import 'package:flutter/material.dart';
 
-import 'package:advance_app/widgets/inputs/input_fields/default_input.dart';
-import 'package:advance_app/widgets/inputs/input_fields/error_input.dart';
-import 'package:advance_app/widgets/inputs/input_fields/large_input.dart';
 
 class ListInputs extends StatelessWidget {
   const ListInputs({Key? key}) : super(key: key);

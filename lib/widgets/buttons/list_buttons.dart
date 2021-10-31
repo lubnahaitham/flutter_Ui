@@ -1,4 +1,4 @@
-import 'package:advance_app/widgets/buttons/switch/switch.dart';
+import 'package:advance/new_ui/widgets/buttons/switch/switch.dart';
 import 'package:flutter/material.dart';
 
 import 'default/accent.dart';

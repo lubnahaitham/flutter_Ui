@@ -1,7 +1,6 @@
+import 'package:advance/new_ui/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../../constants.dart';
 
 class SideCardElements extends StatelessWidget {
   final Map<String, String> columnData;

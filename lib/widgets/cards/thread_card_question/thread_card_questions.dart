@@ -1,8 +1,7 @@
-import 'package:advance_app/widgets/cards/thread_card_question_elements.dart';
+import 'package:advance/new_ui/widgets/cards/thread_card_question/thread_card_question_elements.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
 
 class ThreadCardQuestion extends StatelessWidget {
   const ThreadCardQuestion({Key? key}) : super(key: key);

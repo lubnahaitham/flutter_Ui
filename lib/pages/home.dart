@@ -1,4 +1,4 @@
-import 'package:advance_app/widgets/List_of_all_inputs.dart';
+import 'package:advance/new_ui/widgets/List_of_all_inputs.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {

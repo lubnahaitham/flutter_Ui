@@ -1,12 +1,15 @@
-import 'package:advance_app/widgets/cards/default_card.dart';
-import 'package:advance_app/widgets/cards/review_card.dart';
-import 'package:advance_app/widgets/cards/side_card.dart';
-import 'package:advance_app/widgets/cards/thread_card.dart';
-import 'package:advance_app/widgets/cards/thread_card_questions.dart';
-import 'package:advance_app/widgets/cards/thread_listing.dart';
+
+import 'package:advance/new_ui/widgets/cards/default_card/default_card.dart';
+import 'package:advance/new_ui/widgets/cards/default_card_image/default_card_with_image.dart';
+import 'package:advance/new_ui/widgets/cards/review_card/review_card.dart';
+import 'package:advance/new_ui/widgets/cards/side_card/side_card.dart';
+import 'package:advance/new_ui/widgets/cards/thread_card.dart';
+import 'package:advance/new_ui/widgets/cards/thread_card_question/thread_card_questions.dart';
+
+import 'package:advance/new_ui/widgets/cards/thread_listing.dart';
 import 'package:flutter/material.dart';
 
-import 'default_card_with_image.dart';
+
 
 class ListCards extends StatelessWidget {
   const ListCards({Key? key}) : super(key: key);
@@ -36,6 +39,7 @@ class ListCards extends StatelessWidget {
         columnData1: {"subtitle1": "Jose Portilla"},
         columnData: {},
         iconData: Icons.check_circle,),
+        
       DefaultImageCard(),
       const ThreadCardQuestion(),
     ]);
